@@ -7,6 +7,9 @@ import { AppComponent, PhonePipe } from './app.component';
 import { HelloComponent } from './hello/hello.component';
 import { HeroParentComponent } from './hero-parent/hero-parent.component';
 import { HeroChildComponent } from './hero-child/hero-child.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 @NgModule({
   declarations: [
@@ -14,12 +17,15 @@ import { HeroChildComponent } from './hero-child/hero-child.component';
     HelloComponent,
     HeroParentComponent,
     HeroChildComponent,
-    PhonePipe
+    PhonePipe,
+    DashboardComponent,
+    HeroDetailComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
