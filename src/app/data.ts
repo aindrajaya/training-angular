@@ -7,7 +7,8 @@ export const HEROES = [
   {name: 'Batman', phone: "25565115"},
   {name: 'Spiderman', phone: "25565115"},
   {name: 'Wonder Woman', phone: "25565115"},
-  {name: 'Venom', phone: "25565115"}
+  {name: 'Venom', phone: "25565115"},
+  {name: 'Hulk', phone: "25565115"}
 ]
 
 export interface Hero2 {
