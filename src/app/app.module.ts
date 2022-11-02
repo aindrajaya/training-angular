@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
-import { AppComponent } from './app.component';
+import { AppComponent, PhonePipe } from './app.component';
 import { HelloComponent } from './hello/hello.component';
 import { HeroParentComponent } from './hero-parent/hero-parent.component';
 import { HeroChildComponent } from './hero-child/hero-child.component';
@@ -11,10 +12,12 @@ import { HeroChildComponent } from './hero-child/hero-child.component';
     AppComponent,
     HelloComponent,
     HeroParentComponent,
-    HeroChildComponent
+    HeroChildComponent,
+    PhonePipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
