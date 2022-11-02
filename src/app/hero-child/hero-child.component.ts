@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import {Hero} from "../data"
 
 @Component({
@@ -7,5 +7,15 @@ import {Hero} from "../data"
   styleUrls: ['./hero-child.component.css']
 })
 export class HeroChildComponent{
-  @Input() hero!: Hero;
+  tanggal = new Date();
+  dataKosong: string= "data kosong"
+
+  @Input() count!: number;
+  @Input() heroes!: Hero[];
+
+  @Output() incrementEvent = new EventEmitter<number>();
+  increment(penambah: number){
+    this.incrementEvent.emit(penambah);
+    console.log("penambah")
+  }
 }

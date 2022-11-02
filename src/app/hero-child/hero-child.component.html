@@ -1,3 +1,13 @@
-<ul>
-  <li>{{hero.name}}</li>
-</ul>
+<div *ngIf="heroes.length > 2; else second">
+  <ul *ngFor="let hero of heroes">
+    <li 
+      [ngClass]="hero.name === 'Batman'? 'bg-merah': 'bg-biru'" 
+      >
+      {{hero.name | uppercase}}
+      Tanggal {{tanggal | date}}
+      <div>Phone <b>{{hero.phone | phone}}</b></div>
+    </li>
+  </ul>
+</div>
+<ng-template #second>Data kosong</ng-template>
+
