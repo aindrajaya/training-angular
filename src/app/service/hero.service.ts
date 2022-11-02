@@ -1,22 +1,17 @@
 import { Injectable } from '@angular/core';
 import { Hero } from '../data';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HeroService {
-   HEROES = [
-    {name: 'Batman', phone: "25565115"},
-    {name: 'Spiderman', phone: "25565115"},
-    {name: 'Wonder Woman', phone: "25565115"},
-    {name: 'Venom', phone: "25565115"},
-    {name: 'Hulk', phone: "25565115"},
-    {name: 'Sazam', phone: "66565115"}
-  ]
+  private baseUrl: string = 'http://localhost:3005';
+
+  constructor(private http: HttpClient) {}
 
   getHeroes(): Observable<Hero[]>{
-    const heroes = of(this.HEROES)
-    return heroes;
+    return this.http.get<Hero[]>(this.baseUrl+'/heroes');
   }
 }

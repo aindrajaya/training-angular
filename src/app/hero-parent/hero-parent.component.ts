@@ -20,6 +20,7 @@ export class HeroParentComponent implements OnInit{
   constructor(private heroService: HeroService){}
 
   ngOnInit(): void {
+    this.heroes = []
     this.getHeroes()
   }
 
