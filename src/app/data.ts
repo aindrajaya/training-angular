@@ -10,9 +10,3 @@ export const HEROES = [
   {name: 'Venom', phone: "25565115"},
   {name: 'Hulk', phone: "25565115"}
 ]
-
-export interface Hero2 {
-  id: number;
-  name: string;
-  phone: number
-}

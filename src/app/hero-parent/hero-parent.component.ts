@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 // import {HEROES} from "../data"
 import { HeroService } from '../service/hero.service';
-import { Hero } from '../data';
+import { Hero } from '../model/hero';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-hero-parent',
@@ -17,7 +18,7 @@ export class HeroParentComponent implements OnInit{
     this.count = this.count + value;
   }
 
-  constructor(private heroService: HeroService){}
+  constructor(private heroService: HeroService, private location: Location){}
 
   ngOnInit(): void {
     this.heroes = []
@@ -28,5 +29,9 @@ export class HeroParentComponent implements OnInit{
     // this.heroes = this.heroService.getHeroes()
     this.heroService.getHeroes()
       .subscribe(heroes => this.heroes = heroes);
+  }
+
+  goBack(): void {
+    this.location.back()
   }
 }
