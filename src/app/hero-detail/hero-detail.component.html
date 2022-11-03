@@ -1,0 +1,5 @@
+<div *ngIf="hero; else second">
+  <h2>{{hero.name | uppercase}}</h2>
+  <button type="button" (click)="goBack()">back to previous page</button>
+</div>
+<ng-template #second>Data kosong</ng-template>
