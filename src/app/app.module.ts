@@ -9,6 +9,8 @@ import { HeroParentComponent } from './hero-parent/hero-parent.component';
 import { HeroChildComponent } from './hero-child/hero-child.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ErrorpageComponent } from './errorpage/errorpage.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HeroParentComponent,
     HeroChildComponent,
     PhonePipe,
-    DashboardComponent
+    DashboardComponent,
+    ErrorpageComponent,
+    HeroDetailComponent
   ],
   imports: [
     BrowserModule,
