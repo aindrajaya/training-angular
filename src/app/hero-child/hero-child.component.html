@@ -3,9 +3,11 @@
     <li 
       [ngClass]="hero.name === 'Batman'? 'bg-merah': 'bg-biru'" 
       >
-      {{hero.name | uppercase}}
-      Tanggal {{tanggal | date}}
-      <div>Phone <b>{{hero.phone | phone}}</b></div>
+      <a routerLink="/detail/{{hero.id}}">
+        {{hero.name | uppercase}}
+        Tanggal {{tanggal | date}}
+        <div>Phone <b>{{hero.phone | phone}}</b></div>
+      </a>
     </li>
   </ul>
 </div>
