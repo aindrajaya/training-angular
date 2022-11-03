@@ -7,11 +7,17 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class HeroService {
-  private baseUrl: string = 'http://localhost:3005';
+  private heroUrl: string = 'http://localhost:3005/heroes';
 
   constructor(private http: HttpClient) {}
 
   getHeroes(): Observable<Hero[]>{
-    return this.http.get<Hero[]>(this.baseUrl+'/heroes');
+    return this.http.get<Hero[]>(this.heroUrl);
+  }
+
+  getHero(id: number): Observable<Hero>{
+    //--> http://localhost:3005/heroes/5
+    const urlByID = `${this.heroUrl}/${id}`
+    return this.http.get<Hero>(urlByID) // 
   }
 }
