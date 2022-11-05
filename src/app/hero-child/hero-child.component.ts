@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import {Hero, Hero2} from "../data"
+import { Hero } from '../model/hero';
 
 @Component({
   selector: 'app-hero-child',
@@ -11,7 +11,7 @@ export class HeroChildComponent{
   dataKosong: string= "data kosong"
 
   @Input() count!: number;
-  @Input() heroes!: Hero2[];
+  @Input() heroes!: Hero[];
 
   @Output() incrementEvent = new EventEmitter<number>();
   increment(penambah: number){
