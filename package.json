@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "server": "json-server --watch db.json --port 3005"
+    "server": "json-server --watch ./server/db.json --port 3005"
   },
   "private": true,
   "dependencies": {
