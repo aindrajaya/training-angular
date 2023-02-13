@@ -1,18 +1,129 @@
 {
-  "heroes": 
-  [
-    {"id": 1,"name": "Batman", "phone": "25565115"},
-    {"id": 2,"name": "Spiderman", "phone": "25565115"},
-    {"id": 3,"name": "Wonder Woman", "phone": "25565115"},
-    {"id": 4,"name": "Venom", "phone": "25565115"},
-    {"id": 5,"name": "Hulk", "phone": "25565115"},
-    {"id": 6,"name": "Venom", "phone": "25565115"},
-    {"id": 7,"name": "Venom", "phone": "25565115"},
-    {"id": 8,"name": "Venom", "phone": "25565115"},
-    {"id": 9,"name": "Venom", "phone": "25565115"},
-    {"id": 10,"name": "Venom", "phone": "25565115"}
+  "heroes": [
+    {
+      "id": 1,
+      "name": "Batman",
+      "phone": "25565115"
+    },
+    {
+      "id": 2,
+      "name": "Spiderman",
+      "phone": "25565115"
+    },
+    {
+      "id": 3,
+      "name": "Wonder Woman",
+      "phone": "25565115"
+    },
+    {
+      "id": 4,
+      "name": "Venom",
+      "phone": "25565115"
+    },
+    {
+      "id": 5,
+      "name": "Hulk",
+      "phone": "25565115"
+    },
+    {
+      "id": 6,
+      "name": "Venom",
+      "phone": "25565115"
+    },
+    {
+      "id": 7,
+      "name": "Venom",
+      "phone": "25565115"
+    },
+    {
+      "id": 8,
+      "name": "Venom",
+      "phone": "25565115"
+    },
+    {
+      "id": 9,
+      "name": "Venom",
+      "phone": "25565115"
+    },
+    {
+      "id": 10,
+      "name": "Venom",
+      "phone": "25565115"
+    },
+    {
+      "name": "Ruben",
+      "phone": "42563394",
+      "id": 11
+    },
+    {
+      "name": "modus",
+      "phone": "13493840",
+      "id": 12
+    },
+    {
+      "name": "Iron man",
+      "phone": "22277656",
+      "id": 13
+    },
+    {
+      "name": "Joker",
+      "phone": "55529768",
+      "id": 14
+    },
+    {
+      "name": "Rubiandra",
+      "phone": "34255564",
+      "id": 15
+    },
+    {
+      "id": 16,
+      "name": "Batman Zero",
+      "phone": "73458893"
+    },
+    {
+      "name": "Joker 2",
+      "phone": "76548876",
+      "id": 17
+    },
+    {
+      "id": 18,
+      "name": "Flash",
+      "phone": "87685544"
+    },
+    {
+      "id": 19,
+      "name": "435",
+      "phone": ""
+    },
+    {
+      "id": 20,
+      "name": "23525",
+      "phone": "sdgasg"
+    },
+    {
+      "name": "Hulk lagi",
+      "phone": "99987609",
+      "id": 21
+    },
+    {
+      "name": "Gatotkaca",
+      "phone": "88877644",
+      "id": 22
+    },
+    {
+      "name": "JTR",
+      "phone": "88789822",
+      "id": 23
+    },
+    {
+      "name": "JTR 2",
+      "phone": "45455987",
+      "id": 24
+    }
   ],
   "cars": [
-    {"name": "car1"}
+    {
+      "name": "car1"
+    }
   ]
 }

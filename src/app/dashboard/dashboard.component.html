@@ -4,3 +4,8 @@
     {{hero.name}}
   </a>
 </div>
+<ul>
+  <li *ngFor="let hero of heroes">
+    {{hero.name | uppercase}}
+  </li>
+</ul>
