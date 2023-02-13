@@ -8,8 +8,11 @@
   color: wheat;
 }
 
+li {
+  margin: 10px;
+}
+
 a {
   text-decoration: none;
   color: wheat;
 }
-

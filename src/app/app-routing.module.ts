@@ -5,7 +5,6 @@ import { ErrorpageComponent } from './errorpage/errorpage.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroParentComponent } from './hero-parent/hero-parent.component';
 
-
 const routes: Routes = [
   {path: 'heroes', component: HeroParentComponent},
   {path: '', redirectTo: '/dashboard', pathMatch: 'full' },

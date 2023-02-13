@@ -1,6 +1,6 @@
 <div *ngIf="heroes.length > 2; else second">
-  <ul *ngFor="let hero of heroes">
-    <li 
+  <ul>
+    <li *ngFor="let hero of heroes" 
       [ngClass]="hero.name === 'Batman'? 'bg-merah': 'bg-biru'" 
       >
       <a routerLink="/detail/{{hero.id}}">
