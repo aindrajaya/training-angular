@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Hero2 } from '../data';
 import { Hero } from '../model/hero';
 import { Observable } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
@@ -15,12 +14,8 @@ export class HeroService {
     headers: new HttpHeaders({'Content-type': 'application/json'})
   }
 
-  getHero(id: number): Observable<Hero2>{
-    const urlByID = `${this.baseUrl}/${id}`
-    return this.http.get<Hero2>(urlByID)
-
   getHeroes(): Observable<Hero[]>{
-    return this.http.get<Hero[]>(this.heroUrl);
+    return this.http.get<Hero[]>(this.heroUrl)
   }
 
   getHero(id: number): Observable<Hero>{
@@ -35,4 +30,7 @@ export class HeroService {
   addHeroService(hero: Hero): Observable<Hero>{
     return this.http.post<Hero>(this.heroUrl, hero, this.httpOptions)
   }
+  // function getHeroes() {
+  //   throw new Error('Function not implemented.');
+  // }
 }

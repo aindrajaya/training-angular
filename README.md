@@ -1,10 +1,13 @@
-# MyApp
+# Angular Training App version 14
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
-## Development server
+## Development Environment
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+## Run Backend Services
+You can run `npm run server` to activate the mockup server that will display items needed. You could see your data in `http://localhost:3005`. It build using `json-server`, you can read [here](https://www.npmjs.com/package/json-server) to get more information
 
 ## Code scaffolding
 

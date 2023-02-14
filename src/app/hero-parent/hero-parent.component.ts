@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import {HEROES} from "../data"
 import { HeroService } from '../service/hero.service';
-import { Hero2 } from '../data';
 import { Hero, HeroModel } from '../model/hero';
 import { Location } from '@angular/common';
 
@@ -12,8 +10,7 @@ import { Location } from '@angular/common';
 })
 
 export class HeroParentComponent implements OnInit{
-  // heroes = HEROES;
-  heroes: Hero2[] = [];
+  heroes: Hero[] = [];
   title: string = "Judul awal"
   count: number = 1;
   inc(value: number){
@@ -36,7 +33,6 @@ export class HeroParentComponent implements OnInit{
   }
 
   getHeroes(): void {
-    // this.heroes = this.heroService.getHeroes()
     this.heroService.getHeroes()
       .subscribe(heroes => this.heroes = heroes);
   }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Arr } from '../definition';
+import { Arr } from '../fundamental-interface/definition';
 
 @Component({
   selector: 'app-hello',
